@@ -98,10 +98,12 @@ div.product-container {
     padding: 55px;
 }
 h2.product-header {
-    font-family: "Open Sans";
+    color: #0066B3;
 }
-h4.product-header {
-    font-family: "Open Sans";
+h5.product-header {
+    font-size: 17px;
+    color: #0066B3;
+    font-weight: bold;
 }
 div.sub-product {
     border:solid #0066B3 1px;
@@ -127,4 +129,31 @@ div.sub-product-content {
 }
 div.row-product-info {
     margin-bottom:20px;
+}
+div.left-nav-menu {
+    position: fixed;
+    top:50%;
+    transform: translateY(-50%);
+}
+ul.left-nav-menu {
+    font-size: 16px;
+    line-height: 50px;
+    padding: 0;
+    list-style-type: none;
+}
+.zoomimg {
+    transition: all .2s ease;
+}
+.zoomimg:hover {
+    -webkit-transform: scale(1.2);
+}
+a.left-nav-menu {
+    text-decoration: none; 
+    font-family = "Open Sans";
+}
+a.left-nav-menu-disabled {
+    color:gray;
+}
+p.product-info {
+    font-size: 15px;
 }

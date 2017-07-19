@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 
-// import fade in animation
-import { fadeInAnimation } from '../_animations/route-animation';
-
 @Component({
     selector: 'home',
     template: `
@@ -24,8 +21,6 @@ import { fadeInAnimation } from '../_animations/route-animation';
             </div>
         </div>
     `,
-    animations: [fadeInAnimation],
-    host: { '[@fadeInAnimation]': '' },
     styles: [`
         div.home-content {
             margin-top:50px;

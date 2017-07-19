@@ -10,12 +10,14 @@ import { MainFooterComponent } from './footer/main-footer.component';
 import { HomeComponent } from './home/home.component';
 import { CesaComponent } from './cesa/cesa.component';
 import { ErsComponent } from './ers/ers.component';
+import { SavPerspectiveComponent } from './cesa/sav/sav-perspective.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home',  component: HomeComponent, data: {animation: 'homePage'} },
-  { path: 'cesa',  component: CesaComponent, data: {animation: 'cesaPage'} },
-  { path: 'ers',     component: ErsComponent, data: {animation: 'ersPage'} }
+  { path: 'home', component: HomeComponent, data: {animation: 'homePage'} },
+  { path: 'cesa', component: CesaComponent, data: {animation: 'cesaPage'} },
+  { path: 'ers', component: ErsComponent, data: {animation: 'ersPage'} },
+  { path: 'sav-perspective', component: SavPerspectiveComponent, data: {animation: 'savPerspectivePage'} }
 ];
 
 @NgModule({
@@ -32,7 +34,8 @@ const routes: Routes = [
     MainFooterComponent,
     HomeComponent,
     CesaComponent,
-    ErsComponent
+    ErsComponent,
+    SavPerspectiveComponent
   ],
   bootstrap:    [ 
     AppComponent 
