@@ -2,7 +2,7 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
-import {Ng2PageScrollModule} from 'ng2-page-scroll';
+import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
 import { AppComponent }  from './app.component';
 import { MainNavComponent } from './nav/main-nav.component';
@@ -13,9 +13,9 @@ import { ErsComponent } from './ers/ers.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home',  component: HomeComponent },
-  { path: 'cesa',  component: CesaComponent },
-  { path: 'ers',     component: ErsComponent }
+  { path: 'home',  component: HomeComponent, data: {animation: 'homePage'} },
+  { path: 'cesa',  component: CesaComponent, data: {animation: 'cesaPage'} },
+  { path: 'ers',     component: ErsComponent, data: {animation: 'ersPage'} }
 ];
 
 @NgModule({

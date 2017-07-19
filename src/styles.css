@@ -7,6 +7,7 @@ body {
     background-color:#f7f7f7;
     margin: 0;
     margin-bottom: 80px;
+    font-family: "Open Sans";
 }
 .btn-main-custom-container {
     margin-top:50px;
@@ -78,11 +79,52 @@ div.circular {
     z-index:1;
 }
 div.product-circular {
-    left:-2%;
-    top: -4%;
+    left:50%;
+    margin-left:-40px;
+    margin-top:-25px;
     width: 75px;
     height: 75px;
     line-height: 75px;
     font-size: 18px;
     position:absolute;
+}
+div.product {
+    background-color:white;
+    margin-bottom: 70px;
+    border-radius: 10px;
+    position: relative;
+}
+div.product-container {
+    padding: 55px;
+}
+h2.product-header {
+    font-family: "Open Sans";
+}
+h4.product-header {
+    font-family: "Open Sans";
+}
+div.sub-product {
+    border:solid #0066B3 1px;
+    border-radius: 5px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+div.sub-product-header {
+    background-color:#0066B3;
+    min-height:50px;
+    width:100%;
+    display:table;
+}
+h4.sub-product-header {
+    margin: 0 auto;
+    color:white;
+    display:table-cell;
+    vertical-align:middle;
+}
+div.sub-product-content {
+    word-wrap: break-word;
+    padding:10px;
+}
+div.row-product-info {
+    margin-bottom:20px;
 }

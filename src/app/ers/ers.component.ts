@@ -20,10 +20,10 @@ import { fadeInAnimation } from '../_animations/route-animation';
                 <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
                     <div class="left-nav-menu">
                         <ul class="left-nav-menu">
-                            <li class="zoomimg active"><a class="left-nav-menu" [routerLink]="['/ers']" routerLinkActive="active"  [routerLinkActiveOptions]= "{exact: true}" fragment="main-nav" href="#main-nav" >Top</a></li>
-                            <li class="zoomimg"><a class="left-nav-menu" [routerLink]="['/ers']" routerLinkActive="active"  [routerLinkActiveOptions]= "{exact: true}" fragment="creditedge" href="#creditedge">CreditEdge</a></li>
-                            <li class="zoomimg"><a class="left-nav-menu" [routerLink]="['/ers']" routerLinkActive="active"  [routerLinkActiveOptions]= "{exact: true}" fragment="creditview" href="#creditview">CreditView 2</a></li>
-                            <li class="zoomimg"><a class="left-nav-menu" [routerLink]="['/ers']" routerLinkActive="active"  [routerLinkActiveOptions]= "{exact: true}" fragment="sav" href="#sav">SAV</a></li>
+                            <li class="zoomimg active"><a class="left-nav-menu" pageScroll [pageScrollDuration]="500" href="#main-nav">Top</a></li>
+                            <li class="zoomimg"><a class="left-nav-menu" pageScroll [pageScrollDuration]="500" href="#creditedge">CreditEdge</a></li>
+                            <li class="zoomimg"><a class="left-nav-menu" pageScroll [pageScrollDuration]="500" href="#creditview">CreditView 2</a></li>
+                            <li class="zoomimg"><a class="left-nav-menu" pageScroll [pageScrollDuration]="500" href="#sav">SAV</a></li>
                         </ul>
                     </div>
                 </div>
@@ -154,7 +154,7 @@ import { fadeInAnimation } from '../_animations/route-animation';
     host: { '[@fadeInAnimation]': '' },
     styles: [`
         div.ers-content {
-            padding-top:50px;
+            margin-top: 70px;
         }
         h2.ers-content {
             max-width:600px;
@@ -192,21 +192,6 @@ import { fadeInAnimation } from '../_animations/route-animation';
             text-decoration: none; 
             font-family = "Open Sans";
         }
-        div.product {
-            background-color:white;
-            margin-bottom:50px;
-            border-radius: 10px;
-            position: relative;
-        }
-        div.product-container {
-            padding: 75px;
-        }
-        h2.product-header {
-            font-family: "Open Sans";
-        }
-        h4.product-header {
-            font-family: "Open Sans";
-        }
         a.active {
             color: black !important;
         }
@@ -214,31 +199,6 @@ import { fadeInAnimation } from '../_animations/route-animation';
             width: 160px;
             margin-bottom:5px;
             margin-top:10px;
-        }
-        div.sub-product {
-            border:solid #0066B3 1px;
-            border-radius: 5px;
-            margin-top:10px;
-            margin-bottom:20px;
-        }
-        div.sub-product-header {
-            background-color:#0066B3;
-            min-height:50px;
-            width:100%;
-            display:table;
-        }
-        h4.sub-product-header {
-            margin: 0 auto;
-            color:white;
-            display:table-cell;
-            vertical-align:middle;
-        }
-        div.sub-product-content {
-            word-wrap: break-word;
-            padding:10px;
-        }
-        div.row-product-info {
-            margin-bottom:20px;
         }
     `]
 })

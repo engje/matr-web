@@ -160,7 +160,7 @@ declare var $ :any;
     host: { '[@fadeInAnimation]': '' },
     styles: [`
         div.cesa-content {
-            padding-top:50px;
+            margin-top: 70px;
         }
         h2.cesa-content {
             max-width:600px;
@@ -198,21 +198,6 @@ declare var $ :any;
             text-decoration: none; 
             font-family = "Open Sans";
         }
-        div.product {
-            background-color:white;
-            margin-bottom:50px;
-            border-radius: 10px;
-            position: relative;
-        }
-        div.product-container {
-            padding: 75px;
-        }
-        h2.product-header {
-            font-family: "Open Sans";
-        }
-        h4.product-header {
-            font-family: "Open Sans";
-        }
         a.active {
             color: black !important;
         }
@@ -220,31 +205,6 @@ declare var $ :any;
             width: 160px;
             margin-bottom:5px;
             margin-top:10px;
-        }
-        div.sub-product {
-            border:solid #0066B3 1px;
-            border-radius: 5px;
-            margin-top:10px;
-            margin-bottom:20px;
-        }
-        div.sub-product-header {
-            background-color:#0066B3;
-            min-height:50px;
-            width:100%;
-            display:table;
-        }
-        h4.sub-product-header {
-            margin: 0 auto;
-            color:white;
-            display:table-cell;
-            vertical-align:middle;
-        }
-        div.sub-product-content {
-            word-wrap: break-word;
-            padding:10px;
-        }
-        div.row-product-info {
-            margin-bottom:20px;
         }
     `]
 })
