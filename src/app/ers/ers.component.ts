@@ -11,7 +11,7 @@ import { fadeInAnimation } from '../_animations/route-animation';
                 <div class="container section-header">
                     <div>
                         <div class="circular">ERS</div>
-                        <h2 class="ers-content" align="center">Content, Economics & Structured Analytics Division</h2>
+                        <h2 class="ers-content" align="center">Enterprise Risk Solutions</h2>
                         <h4 class="ers-content" align="center">Reliable delivery of our top in class economic research and valuations to serve the evolving finance industry.</h4>
                     </div>
                 </div>

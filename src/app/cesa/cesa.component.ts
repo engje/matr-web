@@ -17,7 +17,7 @@ declare var $ :any;
                 <div class="container section-header">
                     <div>
                         <div class="circular">CESA</div>
-                        <h2 class="cesa-content" align="center">Content, Economics & Structured Analytics Division</h2>
+                        <h2 class="cesa-content" align="center">Content, Economics & Structured Analytics</h2>
                         <h4 class="cesa-content" align="center">Reliable delivery of our top in class economic research and valuations to serve the evolving finance industry.</h4>
                     </div>
                 </div>
