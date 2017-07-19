@@ -26,10 +26,10 @@ declare var $ :any;
                 <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
                     <div class="left-nav-menu">
                         <ul class="left-nav-menu">
-                            <li class="zoomimg active"><a class="left-nav-menu" [routerLink]="['/cesa']" routerLinkActive="active"  [routerLinkActiveOptions]= "{exact: true}" fragment="main-nav" href="#main-nav">Top</a></li>
-                            <li class="zoomimg"><a class="left-nav-menu" [routerLink]="['/cesa']" routerLinkActive="active"  [routerLinkActiveOptions]= "{exact: true}" fragment="creditedge" href="#creditedge">CreditEdge</a></li>
-                            <li class="zoomimg"><a class="left-nav-menu" [routerLink]="['/cesa']" routerLinkActive="active"  [routerLinkActiveOptions]= "{exact: true}" fragment="creditview" href="#creditview">CreditView 2</a></li>
-                            <li class="zoomimg"><a class="left-nav-menu" [routerLink]="['/cesa']" routerLinkActive="active"  [routerLinkActiveOptions]= "{exact: true}" fragment="sav" href="#sav">SAV</a></li>
+                            <li class="zoomimg active"><a class="left-nav-menu" pageScroll [pageScrollDuration]="500" href="#main-nav">Top</a></li>
+                            <li class="zoomimg"><a class="left-nav-menu" pageScroll [pageScrollDuration]="500" href="#creditedge">CreditEdge</a></li>
+                            <li class="zoomimg"><a class="left-nav-menu" pageScroll [pageScrollDuration]="500" href="#creditview">CreditView 2</a></li>
+                            <li class="zoomimg"><a class="left-nav-menu" pageScroll [pageScrollDuration]="500" href="#sav">SAV</a></li>
                         </ul>
                     </div>
                 </div>
