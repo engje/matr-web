@@ -18,13 +18,13 @@ import { Component } from '@angular/core';
                 <div class="container section-header">
                     <div>
                         <div class="circular">ERS</div>
-                        <h2 class="ers-content" align="center">Enterprise Risk Solutions</h2>
-                        <h4 class="ers-content" align="center">Reliable delivery of our top in class economic research and valuations to serve the evolving finance industry.</h4>
+                        <h2 class="section-content" align="center">Enterprise Risk Solutions</h2>
+                        <h4 class="section-content" align="center">Reliable delivery of our top in class economic research and valuations to serve the evolving finance industry.</h4>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="container ers-content">
+                <div class="container section-content">
                     <div id="creditedge" class="product">
                         <div class="circular product-circular align-mid">CE</div>
                         <div class="product-container">
@@ -144,25 +144,6 @@ import { Component } from '@angular/core';
         </div>
     `,
     styles: [`
-        div.ers-content {
-            margin-top: 70px;
-            padding: 0px;
-        }
-        h2.ers-content {
-            max-width:600px;
-            margin:0 auto;
-            font-family: "Open Sans";
-            margin-bottom:20px;
-            font-weight:300;
-            -webkit-font-smoothing: antialiased;
-        }
-        h4.ers-content {
-            font-family: "Open Sans";
-            margin:0 auto;
-            max-width:600px;
-            font-weight:300;
-            -webkit-font-smoothing: antialiased;
-        }
         .btn {
             width: 160px;
             margin-bottom:5px;
@@ -171,5 +152,4 @@ import { Component } from '@angular/core';
     `]
 })
 export class ErsComponent {
-    
 }

@@ -19,13 +19,13 @@ import { Router, NavigationEnd } from '@angular/router';
                 <div class="container section-header">
                     <div>
                         <div class="circular">CESA</div>
-                        <h2 class="cesa-content" align="center">Content, Economics & Structured Analytics</h2>
-                        <h4 class="cesa-content" align="center">Reliable delivery of our top in class economic research and valuations to serve the evolving finance industry.</h4>
+                        <h2 class="section-content" align="center">Content, Economics & Structured Analytics</h2>
+                        <h4 class="section-content" align="center">Reliable delivery of our top in class economic research and valuations to serve the evolving finance industry.</h4>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="container cesa-content">
+                <div class="container section-content">
                     <div id="creditedge" class="product">
                         <div class="circular product-circular align-mid">CE</div>
                         <div class="product-container">
@@ -145,25 +145,6 @@ import { Router, NavigationEnd } from '@angular/router';
         </div>
     `,
     styles: [`
-        div.cesa-content {
-            margin-top: 70px;
-            padding: 0px;
-        }
-        h2.cesa-content {
-            max-width:600px;
-            margin:0 auto;
-            font-family: "Open Sans";
-            margin-bottom:20px;
-            font-weight:300;
-            -webkit-font-smoothing: antialiased;
-        }
-        h4.cesa-content {
-            font-family: "Open Sans";
-            margin:0 auto;
-            max-width:600px;
-            font-weight:300;
-            -webkit-font-smoothing: antialiased;
-        }
         .btn {
             width: 160px;
             margin-bottom:5px;

@@ -22,19 +22,13 @@ declare var $ :any;
                         <div class="circular">SAV</div>
                         <h2 class="sav-content" align="center">Structured Analytics & Valuation</h2>
                         <div class="tech-icon">
-                            <i class="icon-database-alt2 tech-icon"></i>
-                            <i class="icon-csharp tech-icon"></i>
-                            <i class="icon-javascript tech-icon"></i>
-                            <i class="icon-angular tech-icon"></i>
-                            <i class="icon-nodejs tech-icon"></i>
-                            <i class="icon-mssql tech-icon"></i>
-                            <i class="icon-oracle tech-icon"></i>
+                            <i class="{{techIcon}} tech-icon" *ngFor="let techIcon of mainTechIcons"></i>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="container cesa-content">
+                <div class="container section-content">
                     <div id="twenty-sixteen" class="product">
                         <div class="circular product-circular align-mid">2016</div>
                         <div class="product-container">
@@ -47,13 +41,7 @@ declare var $ :any;
                             <div class="row">
                                 <div class="sub-tech-icon">
                                     <h4>Technologies Used</h4>
-                                    <i class="icon-database-alt2 sub-tech-icon"></i>
-                                    <i class="icon-csharp sub-tech-icon"></i>
-                                    <i class="icon-javascript sub-tech-icon"></i>
-                                    <i class="icon-angular sub-tech-icon"></i>
-                                    <i class="icon-nodejs sub-tech-icon"></i>
-                                    <i class="icon-mssql sub-tech-icon"></i>
-                                    <i class="icon-oracle sub-tech-icon"></i>
+                                    <i class="{{techIcon}} sub-tech-icon" *ngFor="let techIcon of augTwentySixteenTechIcons"></i>
                                 </div>
                             </div>
                             <div class="row">
@@ -84,39 +72,9 @@ declare var $ :any;
         </div>
     `,
     styles: [`
-        div.tech-icon {
-            margin-top: 10px;
-            text-align: center;
-        }
-        i.tech-icon {
-            font-size: 40px;
-            color: #0066B3;
-            margin: 10px;
-        }
-        div.sub-tech-icon {
-            margin-top: 10px;
-        }
-        i.sub-tech-icon {
-            font-size: 35px;
-            color: #0066B3;
-            margin: 0px 10px 0px 0px;
-        }
-        div.cesa-content {
-            margin-top: 70px;
-            padding: 0px;
-        }
     `]
 })
 export class SavPerspectiveComponent {
-    constructor(router: Router) {
-        router.events.subscribe(s => {
-          if (s instanceof NavigationEnd) {
-            const tree = router.parseUrl(router.url);
-            if (tree.fragment) {
-              const element = document.querySelector("#" + tree.fragment);
-              if (element) { element.scrollIntoView(element); }
-            }
-          }
-        });
-    }
+    mainTechIcons: string[] = ['icon-database-alt2', 'icon-csharp', 'icon-javascript', 'icon-angular', 'icon-nodejs', 'icon-mssql', 'icon-oracle'];
+    augTwentySixteenTechIcons: string[] =  ['icon-database-alt2', 'icon-csharp', 'icon-javascript', 'icon-angular', 'icon-nodejs', 'icon-mssql', 'icon-oracle'];
 }

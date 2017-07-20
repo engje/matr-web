@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
                         <div class="navbar-logo">
                             <a class="navbar-logo" href="#" [routerLink]=" ['./home'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
                                 <div>
-                                    <img src="./images/branding/ma-logo.svg" alt="elastic-logo-mobile" style="width:80px;height:60px;vertical-align:middle;"><span class="matr-logo" style="font-size:18px;color:#0066B3;"> | MATR</span>
+                                    <img src="./images/branding/ma-logo.svg" alt="moodys-matr-logo" class="navbar-logo"><span class="navbar-logo"> | MATR</span>
                                 </div>
                             </a>
                         </div>
@@ -94,6 +94,15 @@ import { Component } from '@angular/core';
         }
         a.navbar-logo {
             text-decoration: none;
+        }
+        img.navbar-logo {
+            width:80px;
+            height:60px;
+            vertical-align:middle;
+        }
+        span.navbar-logo {
+            font-size:18px;
+            color:#0066B3;
         }
         a.navbar-menu:hover, a.navbar-menu:visited {
             background-color:transparent;

@@ -164,3 +164,39 @@ p.product-info {
 	border-collapse: collapse !important;
 	background-image: none !important;
 }
+div.section-content {
+    margin-top: 70px;
+    padding: 0px;
+}
+h2.section-content {
+    max-width:600px;
+    margin:0 auto;
+    font-family: "Open Sans";
+    margin-bottom:20px;
+    font-weight:300;
+    -webkit-font-smoothing: antialiased;
+}
+h4.section-content {
+    font-family: "Open Sans";
+    margin:0 auto;
+    max-width:600px;
+    font-weight:300;
+    -webkit-font-smoothing: antialiased;
+}
+div.tech-icon {
+    margin-top: 10px;
+    text-align: center;
+}
+i.tech-icon {
+    font-size: 40px;
+    color: #0066B3;
+    margin: 10px;
+}
+div.sub-tech-icon {
+    margin-top: 10px;
+}
+i.sub-tech-icon {
+    font-size: 35px;
+    color: #0066B3;
+    margin: 0px 10px 0px 0px;
+}
