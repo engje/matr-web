@@ -34,7 +34,7 @@ import { Router, NavigationEnd } from '@angular/router';
       
       transition('* => *', [
         style({ transform: 'translate(-400px, 0px)' }),
-        animate('500ms', style({ transform: 'translate(0px)' }))
+        animate('200ms', style({ transform: 'translate(0px)' }))
       ])
     ])
     ]
