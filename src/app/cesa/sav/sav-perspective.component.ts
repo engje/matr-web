@@ -89,7 +89,7 @@ declare var $ :any;
             text-align: center;
         }
         i.tech-icon {
-            font-size: 50px;
+            font-size: 40px;
             color: #0066B3;
             margin: 10px;
         }
@@ -97,7 +97,7 @@ declare var $ :any;
             margin-top: 10px;
         }
         i.sub-tech-icon {
-            font-size: 40px;
+            font-size: 35px;
             color: #0066B3;
             margin: 0px 10px 0px 0px;
         }

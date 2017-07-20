@@ -33,8 +33,8 @@ import { Router, NavigationEnd } from '@angular/router';
       ]),
       
       transition('* => *', [
-        style({ transform: 'translate(-400px, 0px)'; opacity: 0 }),
-        animate('200ms', style({ transform: 'translate(0px)'; opacity: 1 }))
+        style({ transform: 'translate(-400px, 0px)', opacity: 0 }),
+        animate('200ms', style({ transform: 'translate(0px)', opacity: 1 }))
       ])
     ])
     ]
