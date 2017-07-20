@@ -157,3 +157,10 @@ a.left-nav-menu-disabled {
 p.product-info {
     font-size: 15px;
 }
+.navbar-default {
+	-webkit-border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	border-radius: 0px !important;
+	border-collapse: collapse !important;
+	background-image: none !important;
+}
