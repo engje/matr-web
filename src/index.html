@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Angular QuickStart</title>
+    <title>Moody's Analytics MATR Program</title>
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,6 +17,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="font-mfizz/font-mfizz.css">
+    <link rel="stylesheet" href="loading-spinner/loading-spinner.css">
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
 
@@ -30,6 +31,14 @@
   </head>
 
   <body>
-    <my-app>Loading AppComponent content here ...</my-app>
+    <my-app>
+    <div style="text-align:center;margin-top:140px;">
+        <img src="./images/branding/ma-logo.svg" alt="elastic-logo-mobile" style="width:150px;height:130px;vertical-align:middle;"><span class="matr-logo" style="font-size:30px;color:#0066B3;"> | MATR</span>
+    </div>
+    <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
+  </my-app>
   </body>
 </html>
