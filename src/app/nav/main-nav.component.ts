@@ -109,6 +109,7 @@ import { Component } from '@angular/core';
         }
         a.active {
             color:black !important;
+            font-weight: bold;
         }
     `]
 })

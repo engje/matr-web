@@ -32,12 +32,14 @@ import { Router, NavigationEnd } from '@angular/router';
                             <div class="row row-product-info">
                                 <div class="col-lg-6 col-md-3">
                                     <div class="product-header">
-                                        <h4 class="product-header">A Powerful Approach to Measuring Credit Risk.</h4>
+                                        <p class="product-header">A Powerful Approach to Measuring Credit Risk.</p>
                                         <h2 class="product-header">CreditEdge</h2>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <h4 class="product-header">CreditEdge gives users the ability to leverage the industry’s most accurate PD model through cutting-edge analytics. Users can now access our innovative model through fast and reliable platforms.</h4>
+                                    <div class="product-content">
+                                        <p class="product-content">CreditEdge gives users the ability to leverage the industry’s most accurate PD model through cutting-edge analytics. Users can now access our innovative model through fast and reliable platforms.</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
@@ -45,10 +47,10 @@ import { Router, NavigationEnd } from '@angular/router';
                                     <div class="btn" routerLink="/cesa">Perspectives</div>
                                 </div>
                                 <div class="col-lg-2 col-md-12 col-sm-4 col-sm-12 col-sm-12">
-                                    <div class="btn" routerLink="/cesa">Learn More</div>
+                                    <div class="btn btn-inverted" routerLink="/cesa">Learn More</div>
                                 </div>
                                 <div class="col-lg-2 col-md-12 col-sm-4 col-sm-12 col-sm-12">
-                                    <div class="btn" routerLink="/cesa">Download Brochure</div>
+                                    <div class="btn btn-inverted" routerLink="/cesa">Download Brochure</div>
                                 </div>
                             </div>
                         </div>
@@ -64,49 +66,44 @@ import { Router, NavigationEnd } from '@angular/router';
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <h4 class="product-header">CreditEdge gives users the ability to leverage the industry’s most accurate PD model through cutting-edge analytics. Users can now access our innovative model through fast and reliable platforms.</h4>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="sub-product">
-                                        <div class="sub-product-header">
-                                            <h4 class="sub-product-header" align="center">CapitalStructure</h4>
-                                        </div>
-                                        <div class="sub-product-content"> 
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacinia purus. Nulla facilisi. Aliquam id semper quam.                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacinia purus. Nulla facilisi. Aliquam id semper quam.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacinia purus. Nulla facilisi. Aliquam id semper quam.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacinia purus. Nulla facilisi. Aliquam id semper quam.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacinia purus. Nulla facilisi. Aliquam id semper quam.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacinia purus. Nulla facilisi. Aliquam id semper quam.
-                                            <div class="row">
-                                                <div class="col-lg-4"></div>
-                                                <div class="col-lg-4">
-                                                    <div class="btn" onclick="location.href='http://ci2.moodys.com:8080/credit-ratings/Tullow-Oil-plc-credit-rating-820489619';">Learn More</div>
-                                                    </div>
-                                                <div class="col-lg-4"></div>
+                                <div class="sub-product">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <h4 class="sub-product-header">Capital Structure</h4>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h4 class="sub-product-header">Issuer View</h4>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="sub-product">
-                                        <div class="sub-product-header">
-                                            <h4 class="sub-product-header" align="center">IssuerView</h4>
-                                        </div>
-                                        <div class="sub-product-content"> 
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacinia purus. Nulla facilisi. Aliquam id semper quam.                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacinia purus. Nulla facilisi. Aliquam id semper quam.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacinia purus. Nulla facilisi. Aliquam id semper quam.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacinia purus. Nulla facilisi. Aliquam id semper quam.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacinia purus. Nulla facilisi. Aliquam id semper quam.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacinia purus. Nulla facilisi. Aliquam id semper quam.
-                                            <div class="row">
-                                                <div class="col-lg-4"></div>
-                                                <div class="col-lg-4">
-                                                    <div class="btn" onclick="location.href='http://ci2.moodys.com:8080/credit-ratings/Tullow-Oil-plc-credit-rating-820489619';">Learn More</div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class=""> 
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacinia purus. Nulla facilisi. Aliquam id semper quam.
+                                                    <div class="row">
+                                                        <div class="col-lg-4"></div>
+                                                        <div class="col-lg-4">
+                                                            <div class="btn btn-inverted" onclick="location.href='http://ci2.moodys.com:8080/credit-ratings/Tullow-Oil-plc-credit-rating-820489619';">Learn More</div>
+                                                            </div>
+                                                        <div class="col-lg-4"></div>
                                                     </div>
-                                                <div class="col-lg-4"></div>
+                                                </div>
                                             </div>
+                                            <div class="col-lg-6">
+                                                <div class=""> 
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacinia purus. Nulla facilisi. Aliquam id semper quam.   
+                                                    <div class="row">
+                                                        <div class="col-lg-4"></div>
+                                                        <div class="col-lg-4">
+                                                            <div class="btn btn-inverted" onclick="location.href='http://ci2.moodys.com:8080/credit-ratings/Tullow-Oil-plc-credit-rating-820489619';">Learn More</div>
+                                                            </div>
+                                                        <div class="col-lg-4"></div>
+                                                    </div>
+                                                </div>
+                                            </div>                                                
                                         </div>
                                     </div>
                                 </div>
@@ -124,7 +121,7 @@ import { Router, NavigationEnd } from '@angular/router';
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <h4 class="product-header">CreditEdge gives users the ability to leverage the industry’s most accurate PD model through cutting-edge analytics. Users can now access our innovative model through fast and reliable platforms.</h4>
+                                    <p class="product-content">CreditEdge gives users the ability to leverage the industry’s most accurate PD model through cutting-edge analytics. Users can now access our innovative model through fast and reliable platforms.</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -132,10 +129,10 @@ import { Router, NavigationEnd } from '@angular/router';
                                     <div class="btn" routerLink="/sav-perspective">Perspectives</div>
                                 </div>
                                 <div class="col-lg-2 col-md-12 col-sm-4 col-sm-12 col-sm-12">
-                                    <div class="btn" routerLink="/cesa">Learn More</div>
+                                    <div class="btn  btn-inverted" routerLink="/cesa">Learn More</div>
                                 </div>
                                 <div class="col-lg-2 col-md-12 col-sm-4 col-sm-12 col-sm-12">
-                                    <div class="btn" routerLink="/cesa">Download Brochure</div>
+                                    <div class="btn btn-inverted" routerLink="/cesa">Download Brochure</div>
                                 </div>
                             </div>
                         </div>
