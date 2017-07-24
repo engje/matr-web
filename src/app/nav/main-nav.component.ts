@@ -92,9 +92,7 @@ import { Component } from '@angular/core';
             font-size: 14px;
             font-weight: 400;
             border-radius: 2px;
-            margin-right:50%;
             min-width:50px;
-            margin-left: 45%;
         }
         .btn-main-custom:after {
             content: '';

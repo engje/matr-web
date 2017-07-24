@@ -8,16 +8,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
             <div class="home-content-container">
                 <h1 class="home-content" align="center">Moody's Analytics Technology Rotation Program</h1>
                 <h4 class="home-content" align="center">Work on real-world challenges and apply your knowledge to help us deliver the best solutions for our clients. Deepen and expand your expertise in current technologies and financial markets. </h4>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12">
-                            <div class="btn" routerLink="/cesa">CESA</div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="btn" routerLink="/ers">ERS</div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     `,
@@ -30,12 +20,21 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
             margin-bottom:20px;
             padding: 30px;
         }
+        h1.home-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h4.home-content {
+            padding-top: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
         div.home-content-container {
-            width:65%;
             margin: 0 auto;
         }
         .btn {
-            width: 160px;
+            width: 200px;
             margin-bottom:5px;
             margin-top:10px;
         }
