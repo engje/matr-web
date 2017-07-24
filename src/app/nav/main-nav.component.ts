@@ -3,10 +3,15 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'main-nav',
     template: `
-        <nav id="main-nav" class="navbar-default">
+        <nav id="main-nav" class="navbar navbar-default" role="navigation">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                        <button type="button" class="navbar-toggle navbar-left x collapsed" data-toggle="collapse" data-target="#navbar-collapse-x">
+                            <span class="icon-bar top-bar"></span>
+                            <span class="icon-bar middle-bar"></span>
+                            <span class="icon-bar bottom-bar"></span>
+                        </button>
                         <div class="navbar-logo">
                             <a class="navbar-logo" href="#" [routerLink]=" ['./home'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
                                 <div>
@@ -16,12 +21,12 @@ import { Component } from '@angular/core';
                         </div>
                     </div>
                     <div class="col-lg-10 col-md-9 col-sm-9 col-xs-12">
-                        <div class="navbar-menu">
+                        <div class="collapse navbar-collapse" id="navbar-collapse-x">
                             <ul class="nav navbar-nav navbar-menu">
-                                <li class="navbar-menu">
+                                <li class="navbar-menu" data-toggle="collapse">
                                     <a href="#" class="navbar-menu btn-main-custom" [routerLink]=" ['./cesa'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">CESA</a>
                                 </li>
-                                <li class="navbar-menu">
+                                <li class="navbar-menu" data-toggle="collapse">
                                     <a href="#" class="navbar-menu btn-main-custom" [routerLink]=" ['./ers'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">ERS</a>
                                 </li>
                             </ul>
@@ -35,17 +40,31 @@ import { Component } from '@angular/core';
         h1 {
             margin: 0;
         }
+        .navbar.navbar-default {
+            border: 1;
+            border-color: #dddddd;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        .navbar.navbar-default .navbar-collapse {
+            border: 1;
+                        border-color: #dddddd;
+
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
         nav {
             background-color:white;
-            -webkit-box-shadow: 0px 4px 7px -3px rgba(0,0,0,0.7);
-            -moz-box-shadow: 0px 4px 7px -3px rgba(0,0,0,0.7);
-            box-shadow: 0px 4px 7px -3px rgba(0,0,0,0.7);
+            //-webkit-box-shadow: 0px 4px 7px -3px rgba(0,0,0,0.7);
+            //-moz-box-shadow: 0px 4px 7px -3px rgba(0,0,0,0.7);
+            //box-shadow: 0px 4px 7px -3px rgba(0,0,0,0.7);
             position: relative;
             z-index: 1;
-            //border-style: solid;
-            //border-color: black;
-            //border-width: 0px 0px 1px 0px;
+            border-style: solid;
+            border-color: gray;
+            border-width: 0px 0px 1px 0px;
             border-radius: 0px;
+            margin-bottom: 0px;
         }
         div.navbar-menu {
             text-align:center;
@@ -111,7 +130,49 @@ import { Component } from '@angular/core';
             color:black !important;
             font-weight: bold;
         }
+
+        .navbar-toggle {
+          border: none;
+          background: transparent !important;
+          margin-top:15px;
+        }
+        .navbar-toggle:hover {
+          background: transparent !important;
+        }
+        .navbar-toggle .icon-bar {
+          width: 22px;
+          transition: all 0.2s;
+        }
+        .navbar-toggle .top-bar {
+          transform: rotate(45deg);
+          transform-origin: 10% 10%;
+        }
+        .navbar-toggle .middle-bar {
+          opacity: 0;
+        }
+        .navbar-toggle .bottom-bar {
+          transform: rotate(-45deg);
+          transform-origin: 10% 90%;
+        }
+        .navbar-toggle.collapsed .top-bar {
+          transform: rotate(0);
+        }
+        .navbar-toggle.collapsed .middle-bar {
+          opacity: 1;
+        }
+        .navbar-toggle.collapsed .bottom-bar {
+          transform: rotate(0);
+        }
+        .navbar-toggle.navbar-left {
+          float: left;
+          margin-left: 10px;
+        }
     `]
 })
 export class MainNavComponent {
+    isIn = false;   // store state
+    toggleState() { // click handler
+        let bool = this.isIn;
+        this.isIn = bool === false ? true : false; 
+    }
 }

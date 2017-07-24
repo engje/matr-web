@@ -4,21 +4,11 @@ import { Component } from '@angular/core';
     selector: 'ers',
     template: `
         <div class="container-fluid">
-            <div class="hidden-md hidden-sm hidden-xs">
-                <div class="left-nav-menu">
-                    <ul class="left-nav-menu">
-                        <li class="zoomimg"><a class="left-nav-menu" pageScroll [pageScrollDuration]="500" href="#main-nav">Top</a></li>
-                        <li class="zoomimg"><a class="left-nav-menu" pageScroll [pageScrollDuration]="500" href="#creditedge">CreditEdge</a></li>
-                        <li class="zoomimg"><a class="left-nav-menu" pageScroll [pageScrollDuration]="500" href="#creditview">CreditView 2</a></li>
-                        <li class="zoomimg"><a class="left-nav-menu" pageScroll [pageScrollDuration]="500" href="#sav">SAV</a></li>
-                    </ul>
-                </div>
-            </div>
             <div class="row">
                 <div class="container section-header">
                     <div>
                         <div class="circular">ERS</div>
-                        <h2 class="section-content" align="center">Enterprise Risk Solutions</h2>
+                        <h2 class="section-content" align="center">Content, Economics & Structured Analytics</h2>
                         <h4 class="section-content" align="center">Reliable delivery of our top in class economic research and valuations to serve the evolving finance industry.</h4>
                     </div>
                 </div>

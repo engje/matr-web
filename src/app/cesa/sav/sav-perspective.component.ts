@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
-declare var jquery:any;
-declare var $ :any;
-
 @Component({
     selector: 'sav',
     template: `

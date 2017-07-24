@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'home',
@@ -43,4 +43,6 @@ import { Component } from '@angular/core';
     `]
 })
 export class HomeComponent {
+    @Output() sectionPosition = new EventEmitter();
+    @Input()  content: any;
 }

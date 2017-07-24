@@ -5,16 +5,6 @@ import { Router, NavigationEnd } from '@angular/router';
     selector: 'cesa',
     template: `
         <div class="container-fluid">
-            <div class="hidden-md hidden-sm hidden-xs">
-                <div class="left-nav-menu">
-                    <ul class="left-nav-menu">
-                        <li class="zoomimg"><a class="left-nav-menu" pageScroll [pageScrollDuration]="500" href="#main-nav">Top</a></li>
-                        <li class="zoomimg"><a class="left-nav-menu" pageScroll [pageScrollDuration]="500" href="#creditedge">CreditEdge</a></li>
-                        <li class="zoomimg"><a class="left-nav-menu" pageScroll [pageScrollDuration]="500" href="#creditview">CreditView 2</a></li>
-                        <li class="zoomimg"><a class="left-nav-menu" pageScroll [pageScrollDuration]="500" href="#sav">SAV</a></li>
-                    </ul>
-                </div>
-            </div>
             <div class="row">
                 <div class="container section-header">
                     <div>

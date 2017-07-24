@@ -6,6 +6,7 @@ import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
 import { AppComponent }  from './app.component';
 import { MainNavComponent } from './nav/main-nav.component';
+import { SubNavComponent } from './nav//sub-nav.component';
 import { MainFooterComponent } from './footer/main-footer.component';
 import { HomeComponent } from './home/home.component';
 import { CesaComponent } from './cesa/cesa.component';
@@ -31,6 +32,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     MainNavComponent,
+    SubNavComponent,
     MainFooterComponent,
     HomeComponent,
     CesaComponent,
