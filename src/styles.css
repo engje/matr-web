@@ -27,6 +27,8 @@ body {
     font-size: 18px;
     font-weight: 400;
     border-radius: 2px;
+    max-width: 200px;
+    margin: 0 auto;
 }
 .btn-main-custom:after {
     content: '';

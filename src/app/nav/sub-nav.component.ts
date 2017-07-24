@@ -36,7 +36,7 @@ import { Router, NavigationEnd, Event } from '@angular/router';
         }
         a.navbar-submenu {
             text-decoration: none;
-            font-size: 20px;
+            font-size: 15px;
         }
     `]
 })
@@ -72,6 +72,12 @@ export class SubNavComponent implements OnInit {
                     { "id": '#creditedge', "name": 'Ers 1' },
                     { "id": '#creditview', "name": 'Ers 2' },
                     { "id": '#sav', "name": 'Ers 3' }
+                ];
+            }
+            else if (this.currentRoute === '/sav-perspective')
+            {
+                this.subNavItems = [
+                    { "id": '#twenty-sixteen', "name": '2016' }
                 ];
             }
             else

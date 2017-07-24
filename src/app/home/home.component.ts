@@ -25,7 +25,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
         div.home-content {
             margin-top:50px;
             text-align:center;
-            background-color:#dedede;
             border-radius:10px;
             color:black;
             margin-bottom:20px;

@@ -64,14 +64,7 @@ import { Router, NavigationEnd } from '@angular/router';
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <h4 class="sub-product-header">Capital Structure</h4>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <h4 class="sub-product-header">Issuer View</h4>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class=""> 
+                                                <div> 
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacinia purus. Nulla facilisi. Aliquam id semper quam.
                                                     <div class="row">
                                                         <div class="col-lg-4"></div>
@@ -83,7 +76,8 @@ import { Router, NavigationEnd } from '@angular/router';
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
-                                                <div class=""> 
+                                                <h4 class="sub-product-header">Issuer View</h4>
+                                                <div> 
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacinia purus. Nulla facilisi. Aliquam id semper quam.   
                                                     <div class="row">
                                                         <div class="col-lg-4"></div>

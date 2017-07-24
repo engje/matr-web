@@ -73,7 +73,6 @@ import { Component } from '@angular/core';
             list-style-type: none;
             margin: 0;
             padding: 0;
-            overflow: hidden;
         }
         li.navbar-menu {
             display: block;
@@ -93,8 +92,9 @@ import { Component } from '@angular/core';
             font-size: 14px;
             font-weight: 400;
             border-radius: 2px;
-            margin-right:10px;
+            margin-right:50%;
             min-width:50px;
+            margin-left: 45%;
         }
         .btn-main-custom:after {
             content: '';

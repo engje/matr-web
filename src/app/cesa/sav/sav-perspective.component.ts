@@ -5,14 +5,6 @@ import { Router, NavigationEnd } from '@angular/router';
     selector: 'sav',
     template: `
         <div class="container-fluid">
-            <div class="hidden-md hidden-sm hidden-xs">
-                <div class="left-nav-menu">
-                    <ul class="left-nav-menu">
-                        <li class="zoomimg"><a class="left-nav-menu" pageScroll [pageScrollDuration]="500" href="#twenty-sixteen">2016</a></li>
-                        <li><a class="left-nav-menu left-nav-menu-disabled" pageScroll [pageScrollDuration]="500">2017</a></li>
-                    </ul>
-                </div>
-            </div>  
             <div class="row">
                 <div class="container section-header">
                     <div>
