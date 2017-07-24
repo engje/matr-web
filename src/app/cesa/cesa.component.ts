@@ -37,10 +37,7 @@ import { Router, NavigationEnd } from '@angular/router';
                                     <div class="btn" routerLink="/cesa">Perspectives</div>
                                 </div>
                                 <div class="col-lg-2 col-md-12 col-sm-4 col-sm-12 col-sm-12">
-                                    <div class="btn btn-inverted" routerLink="/cesa">Learn More</div>
-                                </div>
-                                <div class="col-lg-2 col-md-12 col-sm-4 col-sm-12 col-sm-12">
-                                    <div class="btn btn-inverted" routerLink="/cesa">Download Brochure</div>
+                                    <div class="btn btn-inverted" onclick="window.open('https://www.creditedge.com/')">Learn More</div>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +102,7 @@ import { Router, NavigationEnd } from '@angular/router';
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <p class="product-content">CreditEdge gives users the ability to leverage the industry’s most accurate PD model through cutting-edge analytics. Users can now access our innovative model through fast and reliable platforms.</p>
+                                    <p class="product-content">Solutions allow users to monitor, price and stress all structured assets including agency and non-agency RMBS, ABS, CMBS and CDO's. Data is available at the loan and pool level and includes historical performance metrics.</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -113,10 +110,7 @@ import { Router, NavigationEnd } from '@angular/router';
                                     <div class="btn" routerLink="/sav-perspective">Perspectives</div>
                                 </div>
                                 <div class="col-lg-2 col-md-12 col-sm-4 col-sm-12 col-sm-12">
-                                    <div class="btn  btn-inverted" routerLink="/cesa">Learn More</div>
-                                </div>
-                                <div class="col-lg-2 col-md-12 col-sm-4 col-sm-12 col-sm-12">
-                                    <div class="btn btn-inverted" routerLink="/cesa">Download Brochure</div>
+                                    <div class="btn  btn-inverted" onclick="window.open('http://www.moodysanalytics.com/Products-and-Solutions/Structured-Analytics-and-Valuation')">Learn More</div>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +123,7 @@ import { Router, NavigationEnd } from '@angular/router';
         .btn {
             width: 160px;
             margin-bottom:5px;
-            margin-top:10px;
+            margin-top:20px;
         }
     `]
 })

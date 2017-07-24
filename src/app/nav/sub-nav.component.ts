@@ -6,8 +6,10 @@ import { Router, NavigationEnd, Event } from '@angular/router';
     template: `
         <div class="navbar-submenu">
             <ul class="navbar-submenu">
-                <li class="zoomimg navbar-submenu" *ngFor="let item of subNavItems" >
-                    <a href="#" class="navbar-submenu" pageScroll [pageScrollDuration]="500" href="{{item.id}}">{{item.name}}</a>
+                <li class="{{item.classes}}" *ngFor="let item of subNavItems" >
+                    <div class="zoomimg">
+                        <a href="#" class="navbar-submenu" pageScroll [pageScrollDuration]="500" href="{{item.id}}">{{item.name}}</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -20,9 +22,10 @@ import { Router, NavigationEnd, Event } from '@angular/router';
             //-webkit-box-shadow: 0px 4px 7px -3px rgba(0,0,0,0.7);
             //-moz-box-shadow: 0px 4px 7px -3px rgba(0,0,0,0.7);
             //box-shadow: 0px 4px 7px -3px rgba(0,0,0,0.7);
+            padding: 10px;
         }
         ul.navbar-submenu {
-            margin: 0;
+            margin: 0 auto;
             padding: 0;
             text-align:center;
             background: white;
@@ -32,7 +35,15 @@ import { Router, NavigationEnd, Event } from '@angular/router';
         }
         li.navbar-submenu {
             display: inline-block;
-            padding:20px;
+            width: 150px;
+            padding:15px 10px 15px 10px;
+            border-style: solid;
+            border-color: #dddddd;
+            border-width: 0px 1px 0px 0px;
+        }        
+        li.navbar-submenu-last {
+            display: inline-block;
+            border: none;
         }
         a.navbar-submenu {
             text-decoration: none;
@@ -44,9 +55,9 @@ export class SubNavComponent implements OnInit {
 
     @Output() sectionPosition = new EventEmitter();
     
-    subNavItems: { id: string, name: string }[] = [{ "id": '#creditedge', "name": 'CreditEdge' },
-                    { "id": '#creditview', "name": 'CreditView 2' },
-                    { "id": '#sav', "name": 'SAV' }
+    subNavItems: { id: string, name: string, classes: string }[] = [{ "id": '#creditedge', "name": 'CreditEdge', "classes": 'navbar-submenu' },
+                    { "id": '#creditview', "name": 'CreditView 2', "classes": 'navbar-submenu' },
+                    { "id": '#sav', "name": 'SAV', "classes": 'navbar-submenu navbar-submenu-last' }
     ];
     
     currentRoute: string = '/home';
@@ -61,23 +72,23 @@ export class SubNavComponent implements OnInit {
             if (this.currentRoute === '/cesa')
             {
                 this.subNavItems = [
-                    { "id": '#creditedge', "name": 'CreditEdge' },
-                    { "id": '#creditview', "name": 'CreditView 2' },
-                    { "id": '#sav', "name": 'SAV' }
+                    { "id": '#creditedge', "name": 'CreditEdge', "classes": 'navbar-submenu' },
+                    { "id": '#creditview', "name": 'CreditView 2', "classes": 'navbar-submenu' },
+                    { "id": '#sav', "name": 'SAV', "classes": 'navbar-submenu navbar-submenu-last' }
                 ];
             }
             else if (this.currentRoute === '/ers')
             {
                 this.subNavItems = [
-                    { "id": '#creditedge', "name": 'Ers 1' },
-                    { "id": '#creditview', "name": 'Ers 2' },
-                    { "id": '#sav', "name": 'Ers 3' }
+                    { "id": '#creditedge', "name": 'Ers 1', "classes": 'navbar-submenu' },
+                    { "id": '#creditview', "name": 'Ers 2', "classes": 'navbar-submenu' },
+                    { "id": '#sav', "name": 'Ers 3', "classes": 'navbar-submenu navbar-submenu-last' }
                 ];
             }
             else if (this.currentRoute === '/sav-perspective')
             {
                 this.subNavItems = [
-                    { "id": '#twenty-sixteen', "name": '2016' }
+                    { "id": '#twenty-sixteen', "name": '2016', "classes": 'navbar-submenu navbar-submenu-last' }
                 ];
             }
             else

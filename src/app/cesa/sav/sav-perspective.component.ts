@@ -34,19 +34,20 @@ import { Router, NavigationEnd } from '@angular/router';
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="sub-tech-icon">
+                                <div>
                                     <h4>Products</h4>
                                     <h5 class="product-header">LoanDQ</h5>
                                     <p class="product-info">Internal program used by employees who use financial data as well as software engineers. Created a new feature which combined various functionalities to be used by financial engineers, utilizing a clean and modern UI.</p>
-                                    <p class="product-info">Implemented using WinForms, C#, and MS Sql Server.</p>
                                     
                                     <h5 class="product-header">Edgar Loan and Lease XML Parser</h5>
-                                    <p class="product-info">Internal program which runs on a task schedule and retrieves data from the Edgar (SEC) Api. The program accepts a text file and isolates the XML portion to parse it and push the data to the database.</p>
-                                    <p class="product-info">Implemented using WPF, C#, and MS Sql Server</p>
+                                    <p class="product-info">Internal program which runs on a task schedule and retrieves data from the Edgar Api. The program parses the XML and pushes the data to the database.</p>
+                                    <div class="regular-image">
+                                        <img class="regular-image" src="images/perspective-images/SAV/edgarPic.png" alt="Edgar" height="225" width="425">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="sub-tech-icon">
+                                <div>
                                     <h4>Other Tasks</h4>
                                     <h5 class="product-header">Database Maintenance</h5>
                                     <p class="product-info">Deleted duplicate entries in table, and worked on efficiency of stored procedures.</p>
@@ -61,6 +62,12 @@ import { Router, NavigationEnd } from '@angular/router';
         </div>
     `,
     styles: [`
+        div.regular-image {
+            text-align: center;
+        }
+        img.regular-image {
+            margin: 0 auto;
+        }
     `]
 })
 export class SavPerspectiveComponent {

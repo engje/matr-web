@@ -1,7 +1,6 @@
 import { 
     Component,
     state,
-    keyframes,
     OnInit,
     NgModule,
     Input,
