@@ -80,9 +80,9 @@ export class SubNavComponent implements OnInit {
             else if (this.currentRoute === '/ers')
             {
                 this.subNavItems = [
-                    { "id": '#creditedge', "name": 'Ers 1', "classes": 'navbar-submenu' },
-                    { "id": '#creditview', "name": 'Ers 2', "classes": 'navbar-submenu' },
-                    { "id": '#sav', "name": 'Ers 3', "classes": 'navbar-submenu navbar-submenu-last' }
+                    { "id": '#creditedge', "name": 'CMM', "classes": 'navbar-submenu' },
+                    { "id": '#creditview', "name": 'RiskCalc', "classes": 'navbar-submenu' },
+                    { "id": '#sav', "name": 'Scenario Analyzer', "classes": 'navbar-submenu navbar-submenu-last' }
                 ];
             }
             else if (this.currentRoute === '/sav-perspective')
