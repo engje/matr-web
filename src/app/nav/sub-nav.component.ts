@@ -81,7 +81,6 @@ export class SubNavComponent implements OnInit {
             {
                 this.subNavItems = [
                     { "id": '#creditedge', "name": 'CMM', "classes": 'navbar-submenu' },
-                    { "id": '#creditview', "name": 'RiskCalc', "classes": 'navbar-submenu' },
                     { "id": '#sav', "name": 'Scenario Analyzer', "classes": 'navbar-submenu navbar-submenu-last' }
                 ];
             }
