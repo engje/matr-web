@@ -8,8 +8,14 @@ import { Router, NavigationEnd } from '@angular/router';
         div.regular-image {
             text-align: center;
         }
+
         img.regular-image {
             margin: 0 auto;
+        }
+
+        div.work-description {
+            margin-top:25px;
+            margin-bottom: 25px;
         }
     `]
 })
