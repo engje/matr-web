@@ -14,6 +14,6 @@ import { Router, NavigationEnd } from '@angular/router';
     `]
 })
 export class SaPerspectiveComponent {
-    mainTechIcons: string[] = ['icon-database-alt2', 'icon-csharp', 'icon-javascript', 'icon-angular', 'icon-nodejs', 'icon-mssql', 'icon-oracle'];
-    augTwentySixteenTechIcons: string[] =  ['icon-database-alt2', 'icon-csharp', 'icon-javascript', 'icon-angular', 'icon-nodejs', 'icon-mssql', 'icon-oracle'];
+    mainTechIcons: string[] = ['icon-javascript', 'icon-angular', 'icon-nodejs','icon-hadoop','icon-java','icon-gradle','icon-apache'];
+    augTwentySixteenTechIcons: string[] =  ['icon-javascript', 'icon-angular', 'icon-nodejs','icon-hadoop','icon-java','icon-gradle','icon-apache'];
 }
