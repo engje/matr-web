@@ -14,6 +14,8 @@ import { ErsComponent } from './ers/ers.component';
 import { SavPerspectiveComponent } from './cesa/sav/sav-perspective.component';
 import { CmmPerspectiveComponent } from './ers/cmm/cmm-perspective.component';
 import { SaPerspectiveComponent } from './ers/sa/sa-perspective.component';
+import { CePerspectiveComponent } from './cesa/credit-edge/ce-perspective.component';
+import { CapitalStructurePerspectiveComponent } from './cesa/credit-view/capital-structure-perspective.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -22,7 +24,9 @@ const routes: Routes = [
   { path: 'ers', component: ErsComponent, data: {animation: 'ersPage'} },
   { path: 'sav-perspective', component: SavPerspectiveComponent, data: {animation: 'savPerspectivePage'} },
   { path: 'cmm-perspective', component: CmmPerspectiveComponent, data: {animation: 'cmmPerspectivePage'} },
-  { path: 'sa-perspective', component: SaPerspectiveComponent, data: {animation: 'saPerspectivePage'} }  
+  { path: 'sa-perspective', component: SaPerspectiveComponent, data: {animation: 'saPerspectivePage'} },
+  { path: 'ce-perspective', component: CePerspectiveComponent, data: {animation: 'cePerspectivePage'} },
+  { path: 'capital-structure-perspective', component: CapitalStructurePerspectiveComponent, data: {animation: 'cePerspectivePage'} }
 ];
 
 @NgModule({
@@ -43,7 +47,9 @@ const routes: Routes = [
     ErsComponent,
     SavPerspectiveComponent,
     CmmPerspectiveComponent,
-    SaPerspectiveComponent
+    SaPerspectiveComponent,
+    CePerspectiveComponent,
+    CapitalStructurePerspectiveComponent
   ],
   bootstrap:    [ 
     AppComponent 

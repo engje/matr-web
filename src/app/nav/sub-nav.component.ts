@@ -22,7 +22,6 @@ import { Router, NavigationEnd, Event } from '@angular/router';
             //-webkit-box-shadow: 0px 4px 7px -3px rgba(0,0,0,0.7);
             //-moz-box-shadow: 0px 4px 7px -3px rgba(0,0,0,0.7);
             //box-shadow: 0px 4px 7px -3px rgba(0,0,0,0.7);
-            padding: 10px;
         }
         ul.navbar-submenu {
             margin: 0 auto;
@@ -84,7 +83,7 @@ export class SubNavComponent implements OnInit {
                     { "id": '#sav', "name": 'Scenario Analyzer', "classes": 'navbar-submenu navbar-submenu-last' }
                 ];
             }
-            else if (this.currentRoute === '/sav-perspective')
+            else if (this.currentRoute === '/sav-perspective')// || this.currentRoute === '/ce-perspective' || this.currentRoute === '/capital-structure-perspective')
             {
                 this.subNavItems = [
                     { "id": '#twenty-sixteen', "name": '2016', "classes": 'navbar-submenu navbar-submenu-last' }
