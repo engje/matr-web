@@ -16,6 +16,45 @@ import { Router, NavigationEnd } from '@angular/router';
             </div>
             <div class="row">
                 <div class="container section-content">
+                    <div id="creditview" class="product">
+                        <div class="circular product-circular align-mid">CV2</div>
+                        <div class="product-container">
+                            <div class="row row-product-info">
+                                <div class="col-lg-6 col-md-3">
+                                    <div class="product-header-title">
+                                        <h2>CreditView 2</h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-6 sub-product">
+                                            <h4 class="sub-product-header">Capital Structure</h4>
+                                            <div> 
+                                                Consists of three pages: Group Structure, Debt Details, and Debt Amortization.
+                                                <div class="row horizontal-middle">
+                                                    <div class="btn" routerLink="/capital-structure-perspective">Perspectives</div>
+                                                    <div class="btn btn-inverted" onclick="location.href='http://ci2ny.moodys.com:8080/credit-ratings/Toys-R-US-Inc-credit-rating-808798956/capitalstructure/orgchart';">Check It Out</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 sub-product">
+                                            <h4 class="sub-product-header">Issuer View</h4>
+                                            <div> 
+                                                Placeholder. 
+                                                <div class="row horizontal-middle">
+                                                    <div class="btn btn-inverted" onclick="location.href='';">Learn More</div>
+                                                </div>
+                                            </div>
+                                        </div>                                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div id="creditedge" class="product">
                         <div class="circular product-circular align-mid">CE</div>
                         <div class="product-container">
@@ -35,45 +74,6 @@ import { Router, NavigationEnd } from '@angular/router';
                                 </div>
                             </div>
                             <div class="row">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="creditview" class="product">
-                        <div class="circular product-circular align-mid">CV2</div>
-                        <div class="product-container">
-                            <div class="row row-product-info">
-                                <div class="col-lg-6 col-md-3">
-                                    <div class="product-header-title">
-                                        <h2>CreditView 2</h2>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-lg-6 sub-product">
-                                            <h4 class="sub-product-header">Capital Structure</h4>
-                                            <div> 
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacinia purus. Nulla facilisi. Aliquam id semper quam.
-                                                <div class="row horizontal-middle">
-                                                    <div class="btn" routerLink="/capital-structure-perspective">Perspectives</div>
-                                                    <div class="btn btn-inverted" onclick="location.href='http://ci2.moodys.com:8080/credit-ratings/Tullow-Oil-plc-credit-rating-820489619';">Check It Out</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 sub-product">
-                                            <h4 class="sub-product-header">Issuer View</h4>
-                                            <div> 
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacinia purus. Nulla facilisi. Aliquam id semper quam.   
-                                                <div class="row horizontal-middle">
-                                                    <div class="btn btn-inverted" onclick="location.href='http://ci2.moodys.com:8080/credit-ratings/Tullow-Oil-plc-credit-rating-820489619';">Learn More</div>
-                                                </div>
-                                            </div>
-                                        </div>                                                
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

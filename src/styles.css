@@ -12,6 +12,14 @@ body {
     -webkit-font-smoothing: antialiased;
     font-weight: lighter;
 }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .btn-main-custom-container {
     margin-top:50px;
 }
@@ -303,7 +311,6 @@ img.regular-image {
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
-    cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -322,10 +329,8 @@ img.regular-image {
 /* End - Language stack*/
 
 /* START - TECH STACK*/
-
 .logos {
-    /*margin: 30px 0 35px;*/
-    padding: 35px 0 50px;
+    padding: 50px 0;
 }
 
 .grid {
@@ -439,8 +444,12 @@ img.regular-image {
 
 /* END - TECH STACK*/
 
+/* BEGIN - MARGIN */
 .m-t-5 {
     margin-top: 5px;
+}
+.m-t-15 {
+    margin-top: 15px;
 }
 .m-t-30 {
     margin-top: 30px;
@@ -448,15 +457,25 @@ img.regular-image {
 .m-t-70 {
     margin-top: 70px;
 }
+.m-b-5 {
+    margin-bottom: 5px;
+}
 .m-b-20 {
     margin-bottom: 20px;
 }
 .m-b-30 {
     margin-bottom: 30px;
 }
+.m-b-40 {
+    margin-bottom: 40px;
+}
 .m-b-70 {
     margin-bottom: 70px;
 }
+.m-b-100 {
+    margin-bottom: 100px;
+}
+/* END - MARGIN */
 
 figure {
     text-align: center;
@@ -480,16 +499,8 @@ figure {
     box-shadow: 0 45px 30px -26px #b2b2b2;
 }
 
-.container-mp {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.container-mp:before, .container-mp:after {
-    content: " ";
-    display: table;
+.ma-blue-bg {
+    background-color: #029AE1 !important;
 }
 
 .two-col-wrap {
@@ -503,19 +514,24 @@ figure {
     float: none;
 }
 
+.container-mp {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-mp:before, .container-mp:after {
+    content: " ";
+    display: table;
+}
+
 .row-m {
     margin-left: -15px;
     margin-right: -15px;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.bookmark {
+.type-task {
     color: #029AE1;
     font-weight: 600;
     text-transform: uppercase;
@@ -525,6 +541,21 @@ figure {
     text-transform: uppercase;
 }
 
-.ma-blue-bg {
-    background-color: #029AE1 !important;
+.small‐title {
+    line-height: 28px;
+    font-size: 20px;
+}
+
+.cap-img {
+    max-height: 187px;
+}
+.ce-img {
+    max-height: 280px;
+}
+
+.check-it-out-btn {
+    font-weight: 600;
+    text-decoration: none;
+    outline: none;
+    outline-offset: 0;
 }
